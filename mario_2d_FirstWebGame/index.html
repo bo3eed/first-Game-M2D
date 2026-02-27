@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <title>Mario 2D – Plus (Boss + Music)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="c" width="960" height="540"></canvas>
+
+    <div id="hud">
+      <div>❤️ <span id="lives">3</span></div>
+      <div>🪙 <span id="coins">0</span></div>
+      <div>⭐ <span id="score">0</span></div>
+      <div>⏱️ <span id="time">320</span></div>
+      <div>🎵 <span id="music">OFF</span></div>
+      <div id="msg"></div>
+    </div>
+
+    <div id="help">
+      <div><b>Keyboard:</b> A/D or ←/→ move, W/Space jump, Shift run, <b>M</b> music, <b>F</b> fireball (when BIG)</div>
+      <div><b>Mobile:</b> Use the on-screen buttons</div>
+    </div>
+
+    <div id="touch">
+      <button class="btn" data-k="left">◀</button>
+      <button class="btn" data-k="right">▶</button>
+      <button class="btn" data-k="jump">⤒</button>
+      <button class="btn" data-k="run">⟡</button>
+      <button class="btn" data-k="fire">🔥</button>
+      <button class="btn" data-k="music">🎵</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
